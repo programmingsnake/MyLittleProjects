@@ -1,0 +1,9 @@
+s = input()
+if s[-1] == "C":
+   TempC = s[0:-1]
+   TempF = float(TempC) * (9 / 5) + 32
+   print(str(TempF) + "F")
+else:
+   TempF = s[0:-1]
+   TempC = (float(TempF) - 32) * (5 / 9)
+   print(str(TempC) + "C")
